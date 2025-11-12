@@ -59,7 +59,7 @@ def gather_news():
                             matched_news.append(f"{text}: {href}")
         time.sleep(1)
     return matched_news
-
+    
 def send_news_email(subject, body):
     msg = MIMEText(body)
     msg["Subject"] = subject
