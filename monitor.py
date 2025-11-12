@@ -46,4 +46,4 @@ if __name__ == "__main__":
     send_news_email(
     subject="OSINT Monitoring Results",
     body=" ".join(results)
-        )
+    )
