@@ -1,4 +1,5 @@
-print("FORCE BUILD 2025-11-13 01:34)
+print("FORCE BUILD 2025-11-13 01:34")
+PRINT("Print check OK")
 import smtplib
 from email.mime.text import MIMEText
 import os
