@@ -46,7 +46,6 @@ if __name__ ==
 gather_news()
     if results:
 send_news_email(
-    subject="OSINT 
-Monitoring Results",
+    subject="OSINT Monitoring Results",
     body=" ".join(results)
         )
