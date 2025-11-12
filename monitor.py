@@ -40,11 +40,13 @@ def send_news_email(subject, body):
     server.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
     server.quit()
 
-if name == "main":
-    results = gather_news()
+if __name__ ==
+"main":
+    results =
+gather_news()
     if results:
-        send_news_email(
-            subject="OSINT Monitoring Results",
-            body="
-".join(results)
+send_news_email(
+    subject="OSINT 
+Monitoring Results",
+    body=" ".join(results)
         )
