@@ -40,8 +40,7 @@ def send_news_email(subject, body):
     server.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
     server.quit()
 
-if __name__ ==
-"main":
+if __name__ == "__main__":
     results =
 gather_news()
     if results:
