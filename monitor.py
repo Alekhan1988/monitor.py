@@ -23,8 +23,7 @@ NEWS_URLS = [
     "https://www.france24.com/en/europe/",
     "https://www.bbc.com/news/world/",
     "https://www.reuters.com/news/archive/europe",
-    "https://euobserver.com/Euractiv".
-    "https://www.euractiv.com/",
+    "https://euobserver.com/Euractiv",
     "https://brusselsmorning.com/",
     "https://www.eureporter.com/",
     "https://europeannewsroom.com/",
