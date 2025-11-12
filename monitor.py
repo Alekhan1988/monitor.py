@@ -47,6 +47,7 @@ SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 
 def gather_news():
+    print(">>> CALL gather_news()")
     matched_news = []
     for url in NEWS_URLS:
         response = requests.get(url)
