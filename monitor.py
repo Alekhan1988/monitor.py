@@ -41,9 +41,9 @@ def send_news_email(subject, body):
     server.quit()
 
 if __name__ == "__main__":
-    results = gather_news()
-    if results:
-    send_news_email(
-    subject="OSINT Monitoring Results",
-    body=" ".join(results)
-    )
+        results = gather_news()
+if results:
+        send_news_email(
+        subject="OSINT Monitoring Results",
+        body=" ".join(results)
+        )
