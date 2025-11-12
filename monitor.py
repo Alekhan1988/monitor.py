@@ -57,7 +57,7 @@ def gather_news():
             for kw in KEYWORDS:
                 if kw.lower() in text.lower():
                     matched_news.append(f"{text}: {href}")
-    time.sleep(2)
+        time.sleep(2)
     return matched_news
 
 def send_news_email(subject, body):
