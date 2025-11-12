@@ -49,7 +49,7 @@ SMTP_PORT = 587
 def gather_news():
     matched_news = []
     for url in NEWS_URLS:
-        response = requests.get(url)
+    response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
         for link in soup.find_all("a"):
             text = link.get_text()
@@ -57,7 +57,7 @@ def gather_news():
             for kw in KEYWORDS:
                 if kw.lower() in text.lower():
                     matched_news.append(f"{text}: {href}")
-        time.sleep(2)
+    time.sleep(2)
     return matched_news
 
 def send_news_email(subject, body):
