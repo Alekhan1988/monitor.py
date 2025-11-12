@@ -1,6 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 import os
+import requests
 
 KEYWORDS = ["Appeal to european fans", "FCK PTN"]
 NEWS_URLS = [
