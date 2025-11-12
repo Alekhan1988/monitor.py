@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 import os
-import request
+import requests
 from bs4 import BeautifulSoup
 
 KEYWORDS = ["Appeal to european fans", "FCK PTN"]
