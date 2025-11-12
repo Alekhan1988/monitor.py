@@ -3,11 +3,13 @@ from email.mime.text import MIMEText
 import os
 import requests
 from bs4 import BeautifulSoup
+import time
 
 KEYWORDS = ["Appeal to european fans", "FCK PTN"]
 NEWS_URLS = [
     "https://www.euronews.com/news/",
     "https://www.ukrinform.ua/rubric-society",
+    time.sleep(2)
     "https://www.france24.com/en/europe/",
     "https://www.dw.com/en/top-stories/europe/",
     "https://www.bbc.com/news/world/europe",
@@ -55,6 +57,7 @@ def gather_news():
             for kw in KEYWORDS:
                 if kw.lower() in text.lower():
                     matched_news.append(f"{text}: {href}")
+        time.sleep(2)
     return matched_news
 
 def send_news_email(subject, body):
