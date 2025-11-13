@@ -1,4 +1,4 @@
-print("FORCE BUILD 2025-11-13 04:26")
+print("FORCE BUILD 2025-11-13 04:58")
 print("Print check OK")
 import smtplib
 from email.mime.text import MIMEText
@@ -51,14 +51,18 @@ def gather_news():
     print(">>> CALL gather_news()")
     matched_news = []
     for url in NEWS_URLS:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.content, "html.parser")
-        for link in soup.find_all("a"):
+        try:
+            response = requests.get(url, timeout=10)
+            soup = BeautifulSoup(response.content, "html.parser")
+            for link in soup.find_all("a"):
                 text = link.get_text()
                 href = link.get("href")
                 for kw in KEYWORDS:
                     if kw.lower() in text.lower():         
                         matched_news.append(f"{text}: {href}")
+        except requests.exceptions.RequestException as e:
+            print(f"IGNORED: {url} - {e}")
+            continue
     return matched_news
     
 def send_news_email(subject, body):
