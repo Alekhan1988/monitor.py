@@ -54,7 +54,7 @@ def gather_news():
     for url in NEWS_URLS:
         response = requests.get(url)
         soup = BeautifulSoup(response.content, "html.parser")
-            for link in soup.find_all("a"):
+        for link in soup.find_all("a"):
                 text = link.get_text()
                 href = link.get("href")
                     for kw in KEYWORDS:
