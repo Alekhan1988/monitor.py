@@ -1,6 +1,6 @@
 raise Exception("IF YOU SEE ME, THIS IS THE NEW FILE")
-print("FORCE BUILD 2025-11-13 01:34")
-PRINT("Print check OK")
+print("FORCE BUILD 2025-11-13 03:14")
+print("Print check OK")
 import smtplib
 from email.mime.text import MIMEText
 import os
@@ -12,7 +12,6 @@ KEYWORDS = ["Appeal to european fans", "FCK PTN"]
 NEWS_URLS = [
     "https://www.euronews.com/news/",
     "https://www.ukrinform.ua/rubric-society",
-    time.sleep(2)
     "https://www.france24.com/en/europe/",
     "https://www.dw.com/en/top-stories/europe/",
     "https://www.bbc.com/news/world/europe",
