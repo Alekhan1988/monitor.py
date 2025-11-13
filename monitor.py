@@ -1,5 +1,5 @@
 raise Exception("IF YOU SEE ME, THIS IS THE NEW FILE")
-print("FORCE BUILD 2025-11-13 03:14")
+print("FORCE BUILD 2025-11-13 03:38")
 print("Print check OK")
 import smtplib
 from email.mime.text import MIMEText
@@ -59,6 +59,7 @@ def gather_news():
                 href = link.get("href")
                 for kw in KEYWORDS:
                     if kw.lower() in text.lower():
+                        
         matched_news.append(f"{text}: {href}")
     return matched_news
     
