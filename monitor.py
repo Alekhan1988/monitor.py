@@ -57,9 +57,9 @@ def gather_news():
         for link in soup.find_all("a"):
                 text = link.get_text()
                 href = link.get("href")
-                    for kw in KEYWORDS:
-                        if kw.lower() in text.lower():
-                            matched_news.append(f"{text}: {href}")
+                for kw in KEYWORDS:
+                    if kw.lower() in text.lower():
+        matched_news.append(f"{text}: {href}")
     return matched_news
     
 def send_news_email(subject, body):
