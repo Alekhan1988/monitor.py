@@ -2,7 +2,7 @@ name: News Monitor
 
 on:
   schedule:
-    - cron: "0 * * * *"  # запуск щогодини
+    - cron: "0 */1 * * *"  # запуск щогодини
   workflow_dispatch:
 
 jobs:
