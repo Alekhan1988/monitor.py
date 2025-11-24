@@ -28,16 +28,13 @@ NEWS_URLS = [
     "https://www.reuters.com/news/archive/europe",
     "https://euobserver.com/Euractiv",
     "https://brusselsmorning.com/",
-    "https://www.eureporter.com/",
     "https://europeannewsroom.com/",
     "https://www.euroweeklynews.com/",
-    "https://www.eutimes.net/",
+    "https://www.outlines.net",
     "https://www.aljazeera.com/where/europe/",
-    "https://www.areweeurope.com/",
     "https://www.thelocal.com/",
     "https://www.eurotopics.net/en",
     "https://www.ft.com/world/europe",
-    "https://www.eubusiness.com/",
 ]
 EMAIL_TO = "19aggressor88@gmail.com"
 
